@@ -6,7 +6,7 @@ import pendulum
 local_tz = pendulum.timezone("America/Sao_Paulo")
 
 default_args = {
-    'owner': 'lattice',
+    'owner': 'aairflow-leo',
     'depends_on_past': False,
     'start_date': datetime(2022, 11, 14, 0, 0, 0, tzinfo=local_tz),
     'email': ['leonardovenancio12@gmail.com'],
