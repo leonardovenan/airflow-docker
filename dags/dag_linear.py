@@ -2,7 +2,7 @@ from airflow import DAG
 from airflow.operators.bash_operator import BashOperator
 from datetime import datetime
 
-dag = DAG('Dag_Exemplo', description="exemplo de dag",
+dag = DAG('dag_linear', description="dag linear",
           schedule_interval=None, start_date=datetime(2023,3,5),
           catchup=False)
 
