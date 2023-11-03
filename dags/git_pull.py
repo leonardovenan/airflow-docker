@@ -25,7 +25,7 @@ dag = DAG(
 )
 
 #Teste de Dags
-t9X01 = BashOperator(
+t9X01 = BashOperator( 
     task_id='airflow_hello_1',
     bash_command="\"D:/Backup PC/Code/airflow-docker/hello.py\"",
     dag=dag)
