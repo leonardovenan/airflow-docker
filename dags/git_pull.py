@@ -17,7 +17,12 @@ default_args = {
     'retry_delay': timedelta(minutes=5)
 }
 
-dag = DAG('airflow_hello', default_args=default_args, schedule_interval="*/5 * * * *", max_active_runs=1) #,on_failure_callback=sn.slack_failed_task)
+dag = DAG(
+    'airflow_hello'
+    ,default_args=default_args
+    ,schedule_interval="*/5 * * * *"
+    ,max_active_runs=1
+)
 
 #Teste de Dags
 t9X01 = BashOperator(
