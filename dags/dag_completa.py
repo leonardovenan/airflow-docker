@@ -17,9 +17,9 @@ with DAG(
     task6 = BashOperator(task_id="tsk6", bash_command="sleep 3")
     task7 = BashOperator(task_id="tsk7", bash_command="sleep 3")
     task8 = BashOperator(task_id="tsk8", bash_command="sleep 3")
-    task9 = BashOperator(task_id="tsk9", bash_command="sleep 5",
-                         trigger_rule='one_failed')
-
+    task9 = BashOperator(
+        task_id="tsk9", bash_command="sleep 5", trigger_rule="one_failed"
+    )
 
     task1 >> task2
     task3 >> task4
