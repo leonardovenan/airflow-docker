@@ -9,6 +9,7 @@ default_args = {
 
 with DAG(
     dag_id="first_DAG_v0",
+    default_args=default_args,
     start_date=datetime(2023, 6, 1),
     schedule="@daily",
     doc_md=__doc__,
